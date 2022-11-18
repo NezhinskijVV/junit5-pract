@@ -1,10 +1,12 @@
 package numbers;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Isolated;
 
 import static io.restassured.RestAssured.given;
 
+@Disabled("Disabled until bug #99 has been fixed")
 @Isolated
 public class NumbersTest {
     public static final String NUMBERS_URI = "http://numbersapi.com";
